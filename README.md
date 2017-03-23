@@ -13,32 +13,32 @@ Client to extract tweets written in NodeJS
 ## Setup
 > Make sure Github local credentials are setup in your system and SSH keys added in your profile with appropriate priviledges before proceeding. You can refer to [Setup Git](https://help.github.com/articles/set-up-git/) tutorial for help.
 
-#### 1. Clone the repo
+#### 1. Cloning the repo
 ```
 git clone git@github.com:rkgudboy/node-twitter-client.git
 ```
 
-#### 2. Go to directory
+#### 2. Navigating to project directory
 Enter into the directory of cloned project
 ```
 cd node-twitter-client
 ```
 
-#### 3. Install packages
+#### 3. Installing packages and dependencies
 In the directory, install node dependencies from the *package.json*
 ```
 npm install
 ```
 
-#### 4. Create config file
-Create *config.json* file from *config_template.json* file. This file specifies the parameters such as Twitter API keys and port on which our app will run. You can provide your unique values or setup with the default values provided within the template for example purpose in *config_template.json*
+#### 4. Creating config file
+Create *config.json* file from *config_template.json* file. This file specifies the parameters such as Twitter API keys and port on which our app will run. You can provide your unique values or setup with the default values provided within the template for example purpose in *config_template.json*. This file is in the node-twitter-client folder.
 ```
 cp config_template.json config.json
 ```
 
-#### 5. Build process
+#### 5. Project Build process
 Run npm scripts to start the build process. Depending on your type of environment, choose any one:
- > In case of permission related errors, please try running with elevated privileges.
+###### In case of permission related errors, please try running with elevated privileges.
   1. Developement environment
       > Starts build process using a watcher. Build process will start again, as soon as any browser related file is changed. Useful while doing development.
 
@@ -52,7 +52,7 @@ Run npm scripts to start the build process. Depending on your type of environmen
         npm run build
       ```
 
-#### 6. Server startup
+#### 6. Starting the Server
 Start the server after build has completed. Depending on type of environment you are executing the step, choose any one:
   1. Development environment
       > Starts server using a watcher, so that server can be restarted without intervention when any JS file is changed. Useful while doing development.
@@ -60,11 +60,21 @@ Start the server after build has completed. Depending on type of environment you
           node run server:watch
         ```
   2. Production environment
-      > Starts the server in production mode for viewing.
+      > Starts the server in production mode for viewing over port defined in config.json.
 
         ```
           NODE_ENV=production npm run server
         ```
+ ## How to Use
+ #### Result can be seen by opening following link in your web browser : [http://localhost:{port}](http://localhost:<port>)
+example - [http://localhost:7777](http://localhost:7777)
+ 
+## Screenshots
+
+#### 1. Desktop View
+![alt text](https://github.com/rkgudboy/node-twitter-client/blob/master/public/images/desktop-screenshot.png?raw=true "Desktop View")
+#### 2. Mobile View
+![alt text](https://github.com/rkgudboy/node-twitter-client/blob/master/public/images/mobile-screenshot.png?raw=true "Desktop View")
 
 
 
