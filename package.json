@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "server": "node --use_strict --harmony server/index.js",
-    "build": "watch 'mkdir -p dist && mkdir -p dist/public && cp -R public/* dist/public/.' public",
+    "build": "mkdir -p dist && mkdir -p dist/public && cp -R public/* dist/public/.",
+    "build:watch": "watch 'mkdir -p dist && mkdir -p dist/public && cp -R public/* dist/public/.' public",
     "start": "nodemon  --use_strict --harmony server/"
   },
   "repository": {
