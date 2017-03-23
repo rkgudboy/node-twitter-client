@@ -1,0 +1,78 @@
+body{
+  background-color: #f8f8f8;
+}
+.hero-element {
+  background-color: #6f5499;
+  padding-bottom: 10px;
+  text-align: left;
+  overflow: auto;
+  color: #ffffff;
+}
+.footer-text {
+  padding: 12px;
+  background-color: #6f5499;
+  color: #ffffff;
+
+}
+.footer-text > a, .app-subtitle > a {
+  color: #ffffff;
+}
+.app-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.app-subtitle {
+  font-size: 18px;
+}
+.tweet-box {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.profile-image {
+  border-radius: 4px;
+}
+.user-name {
+  color:#14171a;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 4px;
+}
+.twitter-handle {
+  color:#657786;
+  font-size: 12px;
+  text-decoration: none;
+}
+a:hover, a:focus{
+  text-decoration: none;
+}
+.retweet-icon, .like-icon {
+  margin-left: 8px;
+  margin-right: 4px;
+}
+.retweet-count {
+  color: #73e857;
+}
+.like-count {
+  color:#c03a2b;
+}
+.label {
+  padding: .2em .6em .3em;
+  font-size: 90%;
+  font-weight: 700;
+  line-height: 2;
+  color: #fff;
+  border-radius: .25em;
+}
+.label-search {
+  background-color:#5cb85c;
+}
+.label-count {
+  background-color: #337ab7;
+}

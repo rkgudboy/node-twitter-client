@@ -1,0 +1,11 @@
+{
+  "env": "dev",
+  "port": 7777,
+  "min_retweet_count_value":1,
+  "twitter_api_search_term":"#custserv",
+  "twitter_api_retry_timeout":60000,
+  "twitter_api_consumer_key":"",
+  "twitter_api_consumer_secret":"",
+  "twitter_api_access_token":"",
+  "twitter_api_access_token_secret":""
+}

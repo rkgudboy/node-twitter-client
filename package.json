@@ -1,0 +1,36 @@
+{
+  "name": "node-twitter-client",
+  "version": "1.0.0",
+  "description": "Client to extract tweets in NodeJS",
+  "main": "index.js",
+  "author": "Rohit Kashyap",
+  "license": "MIT",
+  "scripts": {
+    "server": "node --use_strict --harmony server/index.js",
+    "build": "watch 'mkdir -p dist && mkdir -p dist/public && cp -R public/* dist/public/.' public",
+    "start": "nodemon  --use_strict --harmony server/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkgudboy/node-twitter-client.git"
+  },
+  "keywords": [
+    "nodejs",
+    "twit",
+    "twitter"
+  ],
+  "bugs": {
+    "url": "https://github.com/rkgudboy/node-twitter-client/issues"
+  },
+  "dependencies": {
+    "express": "4.14.0",
+    "pug": "2.0.0-beta7",
+    "twit": "2.2.5"
+  },
+  "devDependencies": {
+    "eslint": "3.13.0",
+    "eslint-config-airbnb": "14.0.0",
+    "nodemon": "1.11.0",
+    "watch": "1.0.1"
+  }
+}
