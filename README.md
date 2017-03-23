@@ -1,17 +1,19 @@
 # node-twitter-client
-Client to extract tweets written in NodeJS
-
+A NodeJS based client to extract tweets from twitter API using *twit* package and *express* web application framework.
+* The client can be used to search for a particular term with added filter of tweets with a particular number of retweets.
+  1. Search term can be specified in the key **twitter_api_search_term** of *config.json*. Example: "#custserv"
+  2. Value to filter tweets based on number of retweets can be specified in the key **min_retweet_count_value** of *config.json*.
 ## Prerequisites
-> Make sure these are setup on your system:
+> Make sure these software dependencies are setup on your system:
 
-| Feature       | Version           |
+| Name          | Version           |
 | ------------- |:-----------------:|
 | NodeJS        | v4.4.2 or greater |
 | npm           | v3.8.6 or greater |
 
 
 ## Setup
-> Make sure Github local credentials are setup in your system and SSH keys added in your profile with appropriate priviledges before proceeding. You can refer to [Setup Git](https://help.github.com/articles/set-up-git/) tutorial for help.
+> Make sure Github local credentials are setup in your system. You can refer to [Setup Git](https://help.github.com/articles/set-up-git/) tutorial for help.
 
 #### 1. Cloning the repo
 ```
@@ -25,13 +27,22 @@ cd node-twitter-client
 ```
 
 #### 3. Installing packages and dependencies
-In the directory, install node dependencies from the *package.json*
+These are the dependencies for running this project, which have been defined in *package.json*:
+
+| package       | Description                       | Version      |
+| ------------- |:---------------------------------:|:------------:|
+| express       | NodeJS Web Application Framework  | v4.14.0      |  
+| twit          | Twitter API Client for NodeJS     | v2.0.0-beta7 |
+| pug           | Template Engine for NodeJS        | v2.2.5       |
+
+After navigating to *node-twitter-client* directory, above mentioned node dependencies, can be installed by running the command:
 ```
 npm install
 ```
 
 #### 4. Creating config file
-Create *config.json* file from *config_template.json* file. This file specifies the parameters such as Twitter API keys and port on which our app will run. You can provide your unique values or setup with the default values provided within the template for example purpose in *config_template.json*. This file is in the node-twitter-client folder.
+Create *config.json* file from *config_template.json* file. This file specifies the parameters such as Twitter API keys and port on which our app will run. Token and Secret of twitter App for communication with twitter API needs to be entered here in keys **twitter_api_consumer_key**, **twitter_api_consumer_secret**, **twitter_api_access_token**, **twitter_api_access_token_secret**. These can be generated at [https://apps.twitter.com/](https://apps.twitter.com/) 
+###### For evaluation purpose default values have been provided within *config_template.json* in the *node-twitter-client* directory.
 ```
 cp config_template.json config.json
 ```
@@ -39,9 +50,8 @@ cp config_template.json config.json
 #### 5. Project Build process
 Run npm scripts to start the build process. Depending on your type of environment, choose any one:
 ###### In case of permission related errors, please try running with elevated privileges.
-  1. Developement environment
+  1. Development environment
       > Starts build process using a watcher. Build process will start again, as soon as any browser related file is changed. Useful while doing development.
-
       ```
         npm run build:watch
       ```
@@ -55,7 +65,7 @@ Run npm scripts to start the build process. Depending on your type of environmen
 #### 6. Starting the Server
 Start the server after build has completed. Depending on type of environment you are executing the step, choose any one:
   1. Development environment
-      > Starts server using a watcher, so that server can be restarted without intervention when any JS file is changed. Useful while doing development.
+      > Starts server using a watcher, so that server is restarted by watcher as soon as any JS file is changed without having to manually enter the command. Useful during development stage.
         ```
           node run server:watch
         ```
