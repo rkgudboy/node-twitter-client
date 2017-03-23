@@ -4,8 +4,8 @@
   "min_retweet_count_value":1,
   "twitter_api_search_term":"#custserv",
   "twitter_api_retry_timeout":60000,
-  "twitter_api_consumer_key":"",
-  "twitter_api_consumer_secret":"",
-  "twitter_api_access_token":"",
-  "twitter_api_access_token_secret":""
+  "twitter_api_consumer_key":"VBZrybCNfWDHmlqUtlAG7XqFg",
+  "twitter_api_consumer_secret":"fBVhCVxSyCuwWfojdFA5c0zZmp0CnjtWXyqsq6gA706pqz8P3Y",
+  "twitter_api_access_token":"155427171-cdv4I9S0jR7vx9wZDanZkhjdBfEIb4leRNM3qpL7",
+  "twitter_api_access_token_secret":"UQ3IjiKPmp2DYJPFkwGmuYHMZAtQQdxGEecPHBrUaLRSY"
 }
